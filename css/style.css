@@ -423,6 +423,7 @@ h1,h2,h3,h4,h5,h6 {
     
 }
 
+
 input[type="text"] {
     width: 400px;
     height: 65px;
@@ -494,7 +495,7 @@ input[type="text"]:valid {
 /*contacts end*/
 .center__gbo {
     background: url('../img/fon.jpg') no-repeat;
-    height: 700px;
+    height: 800px;
     background-size: cover;
     position: relative;
     line-height: 2;
@@ -630,4 +631,15 @@ input[type="text"]:valid {
     opacity: 95%;
 }
 /*footer end*/
+
+/*admin start*/
+.gear {
+  opacity: .3;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+/*admin end*/
+
     

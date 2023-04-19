@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Car repair</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+    
 </head>
 <body>
 
@@ -22,7 +22,7 @@
             <!--/header__block-->
             <nav class="nav">
                <a href="#part1" class="nav__link">ПОЧЕМУ МЫ</a>
-               <a href="#part2" class="nav__link">РАССЧИТАТЬ ВЫГОДУ</a>
+               <a href="#part2" class="nav__link">ЗАПИСАТЬСЯ</a>
                <a href="#part3" class="nav__link">РАССРОЧКА</a>
                <a href="#part4" class="nav__link">FAST &amp; EASY</a>
                <a href="#part5" class="nav__link">АДРЕС</a>
@@ -35,14 +35,17 @@
                </div>
                 <div class="header__lng">
                     <a href="tel:+79123456789" class="header__lng-link">+79123456789</a>
-                    
                 </div>
+                
                </div>
             </div>
         </div> 
         <!--/header__wrapper-->   
-     </div>
-     <!--/container-->
+    </div>
+    <a href="admin/admin.php" >
+    <img src="img/meh.png" style="  opacity: .2; position: absolute;  top: 0px; right: 0px;">
+    </a>
+<!--/container-->
 </header>
 
 <section class="intro">
@@ -57,7 +60,7 @@
                Предоставляем гарантию на ГБО на 5 лет!
             </h2>
             
-            <a href="#btn" class="btn">Записаться на установку</a>
+            <a href="#part2" class="btn">Записаться на установку</a>
             
             
             </div>
@@ -109,7 +112,7 @@
     </div>
 </section>
 <!--Выбор-->
-<section class="vigoda" id="part">
+<section class="vigoda" id="part2">
     <div class="section_vi">
         <div class="container">
             <div class="vi_1"></div>
@@ -121,7 +124,7 @@
     </div>
 </section>
 <!--Black block-->
-<section class="section about" id="part2">
+<section class="section about" id="part3">
    <div class="container">
        <div class="about__wrapper">
            <div class="about__block">
@@ -140,7 +143,7 @@
     
 </section>
 <!--Black block-->
-<section class="section process" id="part3">
+<section class="section process" id="part4">
     <div class="container">
         <h2 class="process__title">FAST &amp; EASY</h2>
         <h3 class="process__subtitle">НАШ РАБОЧИЙ ПРОЦЕСС</h3>
@@ -179,19 +182,21 @@
         <div class="rectangle">
         <h3 class="form">ЗАЯВКА НА УСТАНОВКУ</h3>
         <form class="contacts__form" action="db.php" method="POST">
+        <form action="send.php" method="post">
             <div class="form__group">
                <label for="" class="label"> 
                 <span>Введите имя</span> 
-               <input name='name' type="text" class="input" placeholder="" >
+               <input name='name' type="text" class="input" placeholder="" required >
                </label>
             </div>
             <div class="form__group">
                 <label class="label">
                     <span>Введите телефон</span> 
-                <input id="your_phone" name="text" type="text" class="label"  >
+                <input id="your_phone" name="text" type="text" class="label" placeholder="" minlength="9"  required >
             </label>
             </div>
             <button class="">Записаться на установку</button>
+         </form>
          </form>
         </div>
       </div>
@@ -218,9 +223,9 @@
     </script>
     
 <!--gbo-->
-<section class="center__gbo">
+<section class="center__gbo" id="part5">
     <div class="container">
-        <div class="gbo">
+            <div class="gbo" >
             <h3>Центр газового оборудования «Goliketa»</h3>
             <div class="text-gbo">
             <p href="adress" class="address_link" >Адрес СТО в Сургуте: <span>Нефтеюганское шоссе, 7/1</span></p>
@@ -246,11 +251,11 @@
                 <img src="img/mir.png" alt="" class="mir">
             </div>
             <div class="footer_colomn2">
-                <a href="#part1" class="nav_footer">ПОЧЕМУ МЫ</a>
-                <a href="#part2" class="nav_footer">РАССЧИТАТЬ ВЫГОДУ</a>
-                <a href="#part3" class="nav_footer">FAST &amp; EASY</a>
-                <a href="#part4" class="nav_footer">ОСТАВИТЬ ЗАЯВКУ</a>
-                <a href="#part5" class="nav_footer">АДРЕС</a>
+               <a href="#part1" class="nav_footer">ПОЧЕМУ МЫ</a>
+               <a href="#part2" class="nav_footer">ЗАПИСАТЬСЯ</a>
+               <a href="#part3" class="nav_footer">РАССРОЧКА</a>
+               <a href="#part4" class="nav_footer">FAST &amp; EASY</a>
+               <a href="#part5" class="nav_footer">АДРЕС</a>
             </div>
             <div class="footer_colomn3">
                 <h3 class="see">Следите за нами</h3>
