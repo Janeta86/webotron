@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Car repair</title>
     <link rel="stylesheet" href="css/style.css">
+
     
 </head>
 <body>
@@ -16,7 +17,7 @@
         <div class="header__wrapper">
             <div class="header__block"> 
                 <a href="#" class="header__logo">
-                    <img src="img/logo.png" alt"">               
+                    <img src="img/logo.png" alt="">               
                 </a>
             </div>
             <!--/header__block-->
@@ -70,7 +71,7 @@
 <!--Выбор-->
 <section class="choice">
     <div class="container wrap" id="part1">
-       <div class="title">
+       <div class="title_choice">
            <h2>
                Нас выбирают тысячи клиентов 
            </h2>
@@ -113,15 +114,247 @@
 </section>
 <!--Выбор-->
 <section class="vigoda" id="part2">
-    <div class="section_vi">
-        <div class="container">
-            <div class="vi_1"></div>
-            <h2 class="intro__vi">
-                РАССЧИТАЙТЕ ВЫГОДУ
-            </h2>
+    <div class="title_vigoda">
+           <h2>
+                ОСТАВЬТЕ ЗАЯВКУ НА УСТАНОВКУ ГБО
+           </h2>
+       </div>
+    <div class="container">
+        <div class="wrapper_app">
 
+                <ul class="rowq">
+                    <li data-tab="tab-1" tabindex="0" class="title">Пропан</li>
+                    <li data-tab="tab-2" tabindex="0" class="title">Метан</li>
+                </ul>
+<form action="bdpropan.php" method="POST">
+                <div id="tab-1" class="content">
+                        <div class="card-body">
+                        <div class="row">
+                            <table cellpadding=0 cellspacing=10>
+                            <tr>
+                            <td class="table1">
+                                <div class="form-group">
+                                    <label for="complects">Комплектация ГБО</label>
+                                    <select class="form-control" id="complectsPropan" name="ComplectsP">
+                                        <optgroup label="Эконом">
+                                        <option value="Alaska">Alaska</option>
+                                        <option value="Atiker">Atiker</option>
+                                        <option value="Tamona">Tamona</option>
+                                    <optgroup label="Стандарт">
+                                        <option value="Poletron F-3,6">Poletron F-3,6</option>
+                                        <option value="OMVL Saver">OMVL Saver</option>
+                                        <option value="Alpfa">Alpfa</option>
+                                        <option value="GFI">GFI</option>
+                                    </optgroup>
+                                    <optgroup label="Стандарт +">
+                                        <option value="Poletron F-1,8">Poletron F-1,8</option>
+                                        <option value="OMVL Dream">OMVL Dream</option>
+                                        <option value="BRC Alba">BRC Alba</option>
+                                        <option value="Lovato">Lovato</option>
+                                        <option value="Landi">Landi</option>
+                                    </optgroup>
+                                    <optgroup label="Премиум">
+                                        <option value="BRC SQ 32 MY-10">BRC SQ 32 MY-10</option>
+                                        <option value="BRC Plug and Drive">BRC Plug and Drive</option>
+                                        <option value="BRC Direct Injection">BRC Direct Injection</option>
+                                    </optgroup>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="engine">Двигатель</label>
+                                    <select class="form-control" id="enginePropan"  name="EngineP">
+                                        <option value="4 - цилиндра" >4 - цилиндра</option>
+                                        <option value="6 - цилиндров">6 - цилиндров</option>
+                                        <option value="8 - цилиндров">8 - цилиндров</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ballon">Баллон</label>
+                                    <select class="form-control" id="ballonPropan" name="BallonP">
+                                        <option value="Баллон тор внутренний 42 л [ 600 х 200 ] БАЖ">Баллон тор внутренний 42 л [ 600 х 200 ] БАЖ</option>
+                                        <option value="Баллон тор внутренний 53 л [ 630 х 225 ] БАЖ">Баллон тор внутренний 53 л [ 630 х 225 ] БАЖ</option>
+                                        <option value="Баллон тор внутренний 54 л [ 630 х 220 ] НЗГА">Баллон тор внутренний 54 л [ 630 х 220 ] НЗГА</option>
+                                        <option value="Баллон тор внутренний 55 л [ 650 х 225 ] БАЖ">Баллон тор внутренний 55 л [ 650 х 225 ] БАЖ</option>
+                                        <option value="Баллон 60 л [315 х 863] БАЖ">Баллон 60 л [315 х 863] БАЖ</option>
+                                        <option value="Баллон тор внутренний 65 л [ 650 х 250 ] БАЖ">Баллон тор внутренний 65 л [ 650 х 250 ] БАЖ</option>
+                                        <option value="Баллон тор внутренний 65 л [ 680 х 225 ] ATIKER">Баллон тор внутренний 65 л [ 680 х 225 ] ATIKER</option>
+                                        <option value="Баллон тор внутренний 73 л [ 720 х 230 ] НЗГА">Баллон тор внутренний 73 л [ 720 х 230 ] НЗГА</option>
+                                        <option value="Баллон 80 л [356 х 900] БАЖ">Баллон 80 л [356 х 900] БАЖ</option>
+                                        <option value="Баллон 103 л [356 х 1110] БАЖ">Баллон 103 л [356 х 1110] БАЖ</option>
+                                        <option value="Баллон 130 л [356 х 1400] БАЖ">Баллон 130 л [356 х 1400] БАЖ</option>
+                                        <option value="Баллон 130 л [399 х 1144] БАЖ">Баллон 130 л [399 х 1144] БАЖ</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ballonkrep">Крепление баллона</label>
+                                    <select class="form-control" selected="selected" id="ballonPropanKrep" name="BallonKrepP">
+                                        <option value="Под днище">Под днище</option>
+                                        <option value="Под раму">Под раму</option>
+                                        <option value="Под запаску">Под запаску</option>
+                                    </select>
+                                </div>
+                            </td>
+
+                            <td class="table2">
+                                <div class="form-group">
+                                    <label for="multiclapan">Мультиклапан</label>
+                                    <select class="form-control" id="multiclapanPropan" name="MulticlapanP">
+                                        <option value="Мультиклапан базовый без электроклапана Tomasetto" >Мультиклапан базовый без электроклапана Tomasetto</option>
+                                        <option value="Мультиклапан EURO с электроклапаном">Мультиклапан EURO с электроклапаном</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="gazmagistral">Газовая магистраль</label>
+                                    <select class="form-control" id="gazmagistralPropan" name="GazmagistralP">
+                                        <option value="Термопласиковая (Италия)">Термопласиковая (Италия)</option>
+                                        <option value="Медная">Медная</option>
+                                        <option value="Стальная">Стальная</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="zapravustroistvo">Заправочное устройство</label>
+                                    <select class="form-control" id="zapravustroistvoPropan" name="ZapravustrP">
+                                        <option value="В бампер, подвесное" selected="selected">В бампер, подвесное</option>
+                                        <option value="В лючок бензобак">В лючок бензобака</option>
+                                    </select>
+                                </div>
+                            </td>
+                            </tr>
+                            </table>
+                        </div>
+                        </div>
+                        <div class="input-textg">
+                            <div class="input-box">
+                                <input type="textg" name="nameP" placeholder="Ваше имя" />
+                            </div>
+                            <div class="input-box">
+                                <input type="textg" name="emailP" placeholder="Введите email" />
+                            </div>
+                            <div class="input-box">
+                                <input id="your_phone" name="telP" type="textg" placeholder="Введите телефон" />
+                            </div>
+                                <input type="submit"class="btn1"  value="Отправить заявку">
+                         </div>
+                              
+                       
+                </div>
+</form>
+            <!-- МЕТАН -->
+            <!-- КОЛОНКА ЛЕВАЯ -->
+<form action="bdmetan.php" method="POST">
+                <div id="tab-2" class="content"> 
+                    <div class="card-body">
+                        <div class="row">
+                        <table cellpadding=0 cellspacing=10>
+                        <tr>
+                        <td class="table1">
+                                <div class="form-group">
+                                    <label for="complects">Комплектация ГБО</label>
+                                    <select class="form-control" id="complectsMetan" name="ComplectsM">
+                                    <optgroup label="Эконом">
+                                        <option for="genre" value="Alaska">Alaska</option>
+                                        <option value="Atiker">Atiker</option>
+                                        <option value="Tamona">Tamona</option>
+                                    <optgroup label="Стандарт">
+                                        <option value="Poletron F-3,6">Poletron F-3,6</option>
+                                        <option value="OMVL Saver">OMVL Saver</option>
+                                        <option value="Alpfa">Alpfa</option>
+                                        <option value="GFI">GFI</option>
+                                    </optgroup>
+                                    <optgroup label="Стандарт +">
+                                        <option value="Poletron F-1,8">Poletron F-1,8</option>
+                                        <option value="OMVL Dream">OMVL Dream</option>
+                                        <option value="BRC Alba">BRC Alba</option>
+                                        <option value="Lovato">Lovato</option>
+                                        <option value="Landi">Landi</option>
+                                    </optgroup>
+                                    <optgroup label="Премиум">
+                                        <option value="BRC SQ 32 MY-10">BRC SQ 32 MY-10</option>
+                                        <option value="BRC Plug and Drive">BRC Plug and Drive</option>
+                                        <option value="BRC Direct Injection">BRC Direct Injection</option>
+                                    </optgroup>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="engine">Двигатель</label>
+                                    <select class="form-control" id="engineMetan" name="EngineM">
+                                    <option value="4 - цилиндра" >4 - цилиндра</option>
+                                    <option value="6 - цилиндров">6 - цилиндров</option>
+                                    <option value="8 - цилиндров">8 - цилиндров</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ballon">Баллон</label>
+                                    <select class="form-control" id="ballonMetan" name="BallonM">
+                                    <option value="Баллон метан 50л 219х1620 60.0 кг">Баллон метан 50л 219х1620 60.0 кг</option>
+                                    <option value="Баллон метан 50л 219х1620 60.0 кг (4 шт.)">Баллон метан 50л 219х1620 60.0 кг (4 шт.)</option>
+                                    <option value="Баллон метан GRANT 80 л 406х810 88 кг">Баллон метан GRANT 80 л 406х810 88 кг</option>
+                                    <option value="Баллон метан 90 л 406 х 905 70кг">Баллон метан 90 л 406 х 905 70кг</option>
+                                    <option value="Баллон метан GRANT 90 л 406х900 96 кг">Баллон метан GRANT 90 л 406х900 96 кг</option>
+                                    <option value="Баллон метан GOLDEN FIELD 100 л 406х990 102,6 кг">Баллон метан GOLDEN FIELD 100 л 406х990 102,6 кг</option>
+                                    <option value="Баллон метан GRANT 120 л 406х1170 130 кг">Баллон метан GRANT 120 л 406х1170 130 кг</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ballonkrep">Крепление баллона</label>
+                                    <select class="form-control" selected="selected" id="ballonMetanKrep" name="BallonKrepM">
+                                    <option value="Под днище">Под днище</option>
+                                    <option value="Под раму">Под раму</option>
+                                    <option value="Под запаску">Под запаску</option>
+                                    </select>
+                                </div>
+                        </td>
+            <!-- КОЛОНКА ПРАВАЯ -->
+                        <td class="table2">
+                                    <div class="form-group">
+                                    <label for="multiclapan">Вентель</label>
+                                    <select class="form-control" id="multiclapanMetan" name="MulticlapanM">
+                                        <option value="Вентель базовый без электромагнитного клапана OMB" selected="selected">Вентель базовый без электромагнитного клапана OMB</option>
+                                        <option value="Вентель EURO с электромагнитным клапаном OMB">Вентель EURO с электромагнитным клапаном OMB</option>
+                                    </select>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="gazmagistral">Газовая магистраль стальная</label>
+                                    <select class="form-control" id="gazmagistralMetan" name="GazmagistralM">
+                                        <option value="Стальная" selected="selected">Стальная</option>
+                                    </select>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="zapravustroistvo">Внешний вариатор УОЗ</label>
+                                    <select class="form-control" id="zapravustroistvoMetan" name="ZapravustrM">
+                                        <option value="Без внешнего вариатора УОЗ" selected="selected">Без внешнего вариатора УОЗ</option>
+                                        <option value="С внешним вариатором УОЗ" selected="selected">С внешним вариатором УОЗ </option>
+                                    </select>
+                                    </div>  
+                        </td>
+                        </tr>
+                        </table>
+                        </div>
+                    </div>
+                    
+                    <div class="input-textg">
+            <div class="input-box">
+                <input type="textg" name="nameM" placeholder="Ваше имя" />
+            </div>
+            <div class="input-box">
+                <input type="textg" name="emailM" placeholder="Введите email" />
+            </div>
+            <div class="input-box">
+                <input id="your_phone" name="telM" type="textg" placeholder="Введите телефон" />
+            </div>
+            <div class="input-box">
+                 <input type="submit"class="btn1"  value="Отправить заявку">
+            </div>
+                    </div>
+</form>
+                
+                
+                
         </div>
     </div>
+    
+    <script src="./js/tabs.js"></script>
+    <script src="./js/index.js"></script>
 </section>
 <!--Black block-->
 <section class="section about" id="part3">
@@ -176,26 +409,27 @@
        <div class="contacts__block">
         <div class="texxt">
         <h2 class="contacts__title text-white">
-            ОСТАВЬТЕ ЗАЯВКУ НА УСТАНОВКУ ГБО И ПОЛУЧИТЕ СКИДКУ 15% </h2>
-        <p class="about__text1"> Заполните форму, в течение 15 минут с вами свяжется наш специалист и ответит на все ваши вопросы </p>
+        НУЖНА ПОМОЩЬ В ВЫБОРЕ ОБОРУДОВАНИЯ?</h2>
+        <p class="about__text1"> Оставьте заявку и наш менеджер подберет Вам оборудование по индивидуальным параметрам Вашего автомобиля</p>
         </div>
         <div class="rectangle">
-        <h3 class="form">ЗАЯВКА НА УСТАНОВКУ</h3>
-        <form class="contacts__form" action="db.php" method="POST">
+        <h3 class="form">ПОДБОР ОБОРУДОВАНИЯ</h3>
+
+        <form class="contacts__form" action="bd.php" method="POST">
         <form action="send.php" method="post">
             <div class="form__group">
                <label for="" class="label"> 
                 <span>Введите имя</span> 
-               <input name='name' type="text" class="input" placeholder="" required >
+               <input name="name_z" type="texty" class="input" placeholder="" required >
                </label>
             </div>
             <div class="form__group">
                 <label class="label">
                     <span>Введите телефон</span> 
-                <input id="your_phone" name="text" type="text" class="label" placeholder="" minlength="9"  required >
-            </label>
+                    <input id="your_phone" name="phone_z" type="texty"  placeholder="" minlength="9"  required >
+                </label>
             </div>
-            <button class="">Записаться на установку</button>
+            <button>Отправить заявку</button>
          </form>
          </form>
         </div>
@@ -221,6 +455,7 @@
     }
     
     </script>
+
     
 <!--gbo-->
 <section class="center__gbo" id="part5">

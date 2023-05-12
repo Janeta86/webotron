@@ -12,22 +12,26 @@
 
       <meta charset="utf-8">
       <title>Glowing Inputs Login Form UI</title>
-      <link rel="stylesheet" href="login.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
    </head>
    <body>
 <?php
 session_start(["use_strict_mode" => true]);
-   if (isset($_SESSION['username'])) {
+   if (isset($_SESSION['login'])) {
 
 ?>
 
-   <p>Вы вошли под именем <?=$_SESSION['username']?></p>
-   <p><a href='validate.php?logout=1'>Выйти</a></p>
+ <?php 
+include 'adminpanel.php';  
+?>
+
+
+
 
 <?php }
    else{
    ?>
+   
    <form action="validate.php" method="post">
       <div class="login-form">
          <div class="text">
