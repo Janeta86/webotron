@@ -27,7 +27,7 @@
 }
 
 body{
-    min-height: 540vh;
+    min-height: 560vh;
     background-color: var(--panel-color);
 }
 body.dark{
@@ -277,7 +277,7 @@ nav.close ~ .dashboard .top{
 .dash-content .title{
     display: flex;
     align-items: center;
-    margin: 60px 0px 30px 0;
+  /*   margin: 60px 0px 30px 0; */
 }
 .dash-content .title i{
     position: relative;

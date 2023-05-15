@@ -235,8 +235,11 @@
                             <div class="input-box">
                                 <input id="phone_propan" name="telP" type="textg" placeholder="Введите телефон" required>
                             </div>
+                           <!--  </div>
+                        <div class="input-btn"> -->
                                 <input type="submit" class="btn1"  value="Отправить заявку">
-                         </div>
+                        </div>
+                         
                               
                        
                 </div>
@@ -353,19 +356,19 @@
                     </div>
                     
                     <div class="input-textg">
-            <div class="input-box">
-                <input type="textg" name="nameM" placeholder="Ваше имя" required>
-            </div>
-            <div class="input-box">
-                <input type="textg" name="emailM" placeholder="Введите email" required>
-            </div>
-            <div class="input-box">
-                <input id="phone_metan" name="telM" type="textg" placeholder="Введите телефон" required>
-            </div>
-            <div class="input-box">
-                 <input type="submit"class="btn1"  value="Отправить заявку">
-            </div>
-                    </div>
+                            <div class="input-box">
+                                <input type="textg" name="nameM" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="input-box">
+                                <input type="textg" name="emailM" placeholder="Введите email" required>
+                            </div>
+                            <div class="input-box">
+                                <input id="phone_metan" name="telM" type="textg" placeholder="Введите телефон" required>
+                            </div>
+                           <!--  </div>
+                        <div class="input-btn"> -->
+                                <input type="submit" class="btn1"  value="Отправить заявку">
+                        </div>
 </form>
                 
                 
@@ -458,16 +461,16 @@
             <div class="form__group">
                <label for="" class="label"> 
                 <span>Введите имя</span> 
-               <input name="name_z" type="texty" class="input" placeholder=""  required >
+               <input name="name_z" type="text" class="input" placeholder=""  required >
                </label>
             </div>
             <div class="form__group">
                 <label class="label">
                     <span>Введите телефон</span> 
-                    <input id='phone' name="phone_z" type="texty"  placeholder="" required>
+                    <input id='phone' name="phone_z" type="text" class="input" placeholder="" required>
                 </label>
             </div>
-            <button name="send" value="send" type="send">Отправить заявку</button>
+            <button name="send">Отправить заявку</button>
          </form>
    <!--       </form> -->
         </div>
@@ -507,7 +510,7 @@
             </div>
         </div>
         <div class="ymaps">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aadd439bae4a5c832589ee72974185186a98c8a9387a3c52cc0931c25a79f9c5b&amp;width=500&amp;height=460&amp;lang=ru_RU&amp;"></script>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aadd439bae4a5c832589ee72974185186a98c8a9387a3c52cc0931c25a79f9c5b&amp;lang=ru_RU&amp;"></script>
         </div>
     </div>
 </section>
