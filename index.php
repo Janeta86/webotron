@@ -1,3 +1,4 @@
+<? session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Car repair</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 
     
 </head>
@@ -225,20 +227,38 @@
                         </div>
                         <div class="input-textg">
                             <div class="input-box">
-                                <input type="textg" name="nameP" placeholder="Ваше имя" />
+                                <input type="textg" name="nameP" placeholder="Ваше имя" required>
                             </div>
                             <div class="input-box">
-                                <input type="textg" name="emailP" placeholder="Введите email" />
+                                <input type="textg" name="emailP" placeholder="Введите email" required>
                             </div>
                             <div class="input-box">
-                                <input id="your_phone" name="telP" type="textg" placeholder="Введите телефон" />
+                                <input id="phone_propan" name="telP" type="textg" placeholder="Введите телефон" required>
                             </div>
-                                <input type="submit"class="btn1"  value="Отправить заявку">
+                                <input type="submit" class="btn1"  value="Отправить заявку">
                          </div>
                               
                        
                 </div>
 </form>
+<script>
+      const phone_propan = document.querySelector('#phone_propan')
+    
+      phone_propan.onblur = (e) => {
+        e.target.parentNode.classList.remove('active');
+    }
+    
+    phone_propan.oninput = (e) => {
+        const inp = e.target.value.replace('+7');
+        const nums = inp.replace(/\D/g, '');
+        const x = nums.match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+    
+        e.target.value = '+7' + (!x[2] ? x[1] : '(' + x[1] + ') ') + x[2] + (x[3] ? '-' + x[3] : '');
+        //          e.target.parentNode.classList.add('active');
+    
+    }
+    
+    </script>
             <!-- МЕТАН -->
             <!-- КОЛОНКА ЛЕВАЯ -->
 <form action="bdmetan.php" method="POST">
@@ -334,13 +354,13 @@
                     
                     <div class="input-textg">
             <div class="input-box">
-                <input type="textg" name="nameM" placeholder="Ваше имя" />
+                <input type="textg" name="nameM" placeholder="Ваше имя" required>
             </div>
             <div class="input-box">
-                <input type="textg" name="emailM" placeholder="Введите email" />
+                <input type="textg" name="emailM" placeholder="Введите email" required>
             </div>
             <div class="input-box">
-                <input id="your_phone" name="telM" type="textg" placeholder="Введите телефон" />
+                <input id="phone_metan" name="telM" type="textg" placeholder="Введите телефон" required>
             </div>
             <div class="input-box">
                  <input type="submit"class="btn1"  value="Отправить заявку">
@@ -352,7 +372,25 @@
                 
         </div>
     </div>
+    <script>
+      const phone_metan = document.querySelector('#phone_metan')
     
+      phone_metan.onblur = (e) => {
+        e.target.parentNode.classList.remove('active');
+    }
+    
+    phone_metan.oninput = (e) => {
+        const inp = e.target.value.replace('+7');
+        const nums = inp.replace(/\D/g, '');
+        const x = nums.match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+    
+        e.target.value = '+7' + (!x[2] ? x[1] : '(' + x[1] + ') ') + x[2] + (x[3] ? '-' + x[3] : '');
+        //          e.target.parentNode.classList.add('active');
+    
+    }
+    
+    </script>
+   
     <script src="./js/tabs.js"></script>
     <script src="./js/index.js"></script>
 </section>
@@ -416,35 +454,35 @@
         <h3 class="form">ПОДБОР ОБОРУДОВАНИЯ</h3>
 
         <form class="contacts__form" action="bd.php" method="POST">
-        <form action="send.php" method="post">
+      <!--   <form action="send.php" method="post"> -->
             <div class="form__group">
                <label for="" class="label"> 
                 <span>Введите имя</span> 
-               <input name="name_z" type="texty" class="input" placeholder="" required >
+               <input name="name_z" type="texty" class="input" placeholder=""  required >
                </label>
             </div>
             <div class="form__group">
                 <label class="label">
                     <span>Введите телефон</span> 
-                    <input id="your_phone" name="phone_z" type="texty"  placeholder="" minlength="9"  required >
+                    <input id='phone' name="phone_z" type="texty"  placeholder="" required>
                 </label>
             </div>
-            <button>Отправить заявку</button>
+            <button name="send" value="send" type="send">Отправить заявку</button>
          </form>
-         </form>
+   <!--       </form> -->
         </div>
       </div>
     </div>
 </section>
 
-<script>
-      const yourPhone = document.querySelector('#your_phone')
+ <script>
+      const phone = document.querySelector('#phone')
     
-    yourPhone.onblur = (e) => {
+      phone.onblur = (e) => {
         e.target.parentNode.classList.remove('active');
     }
     
-    yourPhone.oninput = (e) => {
+    phone.oninput = (e) => {
         const inp = e.target.value.replace('+7');
         const nums = inp.replace(/\D/g, '');
         const x = nums.match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
@@ -454,7 +492,7 @@
     
     }
     
-    </script>
+    </script> 
 
     
 <!--gbo-->
@@ -468,8 +506,8 @@
             <p href="email" class="email_link" >E-mail: <span>goliketa@mail.ru</span></p>
             </div>
         </div>
-        <div class="col-md-6">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aadd439bae4a5c832589ee72974185186a98c8a9387a3c52cc0931c25a79f9c5b&amp;width=650&amp;height=460&amp;lang=ru_RU&amp;"></script>
+        <div class="ymaps">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aadd439bae4a5c832589ee72974185186a98c8a9387a3c52cc0931c25a79f9c5b&amp;width=500&amp;height=460&amp;lang=ru_RU&amp;"></script>
         </div>
     </div>
 </section>

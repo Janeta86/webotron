@@ -14,7 +14,7 @@
        exit();
     }
   
-    $sql = "select * from requestforassistance";
+    $sql = "select * from GBO_propan";
     $result = ($conn->query($sql));
     //declare array to store the data of database
     $row = []; 
@@ -42,16 +42,24 @@
         margin: 5px;
         text-align: center;
         font-size: 20px;
-    } -->
-</style>
+    }
+</style> -->
   
 <body>
 <div class="table-wrap">
-    <table>
+    <table >
         <thead>
             <tr>
                 <th>ID</th>
+                <th>Комплектация ГБО</th>
+                <th>Двигатель</th>
+                <th>Баллон</th>
+                <th>Крепление баллона</th>
+                <th>Мультиклапан</th>
+                <th>Газовая магистраль</th>
+                <th>Заправочное устройство</th>
                 <th>Имя</th>
+                <th>Email</th>
                 <th>Телефон</th>
             </tr>
         </thead>
@@ -64,14 +72,22 @@
             <tr>
   
                 <td><?php echo $rows['id']; ?></td>
-                <td><?php echo $rows['name_z']; ?></td>
-                <td><?php echo $rows['phone_z']; ?></td>
+                <td><?php echo $rows['ComplectsP']; ?></td>
+                <td><?php echo $rows['BallonP']; ?></td>
+                <td><?php echo $rows['EngineP']; ?></td>
+                <td><?php echo $rows['BallonKrepP']; ?></td>
+                <td><?php echo $rows['MulticlapanP']; ?></td>
+                <td><?php echo $rows['GazmagistralP']; ?></td>
+                <td><?php echo $rows['ZapravustrP']; ?></td>
+                <td><?php echo $rows['nameP']; ?></td>
+                <td><?php echo $rows['emailP']; ?></td>
+                <td><?php echo $rows['telP']; ?></td>
   
             </tr>
             <?php } ?>
         </tbody>
     </table>
-</div>
+              </div>
 </body>
 </html>
   

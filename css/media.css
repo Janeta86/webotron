@@ -1,6 +1,6 @@
 @media screen and (max-width: 1180px) {
     .wrapper {
-        padding: 0 60px;
+       /*  padding: 0 60px; */
     }
     .info__title {
         letter-spacing: unset;
@@ -41,9 +41,10 @@
         width: 100%;
         
     }
-    input[type="text"] {
+    input[type="texty"] {
         width: 80%;
     }
+    
     .label span {
         margin-left: 10%;
     }
@@ -51,6 +52,12 @@
     .contacts__form button {    
         max-width: 80%;
         min-width: 100px;
+    }
+    .input-textg {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        width: 6em
     }
 }
 
@@ -64,4 +71,8 @@
     .contacts__title {
          margin-bottom: 80px;
      }
+     .contacts__form {
+        width: 20%;
+     }
+ 
 }

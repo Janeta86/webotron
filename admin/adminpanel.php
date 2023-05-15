@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="admin.css">  
+    <link rel="stylesheet" href="style.css">  
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <title>Admin Panel</title> 
@@ -21,30 +21,22 @@
 
         <div class="menu-items">
             <ul class="nav-links">
-                <li><a href="#">
+                <li><a href="../index.php">
                     <i class="uil uil-estate"></i>
                     <span class="link-name">Главный экран</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="#z1">
                     <i class="uil uil-files-landscapes"></i>
                     <span class="link-name">Заявки</span>
                 </a></li>
-                <li><a href="#">
-                    <i class="uil uil-chart"></i>
-                    <span class="link-name">Аналитика</span>
+                <li><a href="#z_propan">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Заявки пропан</span>
                 </a></li>
                 </a></li>
-                <li><a href="#">
-                    <i class="uil uil-thumbs-up"></i>
-                    <span class="link-name">Like</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-comments"></i>
-                    <span class="link-name">Comment</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-share"></i>
-                    <span class="link-name">Share</span>
+                <li><a href="#z_metan">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Заявки метан</span>
                 </a></li>
             </ul>
             
@@ -73,58 +65,54 @@
     <section class="dashboard">
         <div class="top">
             <i class="uil uil-bars sidebar-toggle"></i>
-            
-            <img src="images/profile.jpg" alt="">
         </div>
-
+   
         <div class="dash-content">
             <div class="overview">
                 <div class="title">
-                    <i class="uil uil-tachometer-fast-alt"></i>
-                    <span class="text">Dashboard</span>
+                    <i class="uil uil-files-landscapes" id="z1"></i>
+                    <span class="text">Заявки</span>
                 </div>
-
-           <div class="boxes">
-                    <div class="box box1">
-                        <i class="uil uil-thumbs-up"></i>
-                        <span class="text">Total Likes</span>
-                        <span class="number">50,120</span>
-                    </div>
-                    <div class="box box2">
-                        <i class="uil uil-comments"></i>
-                        <span class="text">Comments</span>
-                        <span class="number">20,120</span>
-                    </div>
-                    <div class="box box3">
-                        <i class="uil uil-share"></i>
-                        <span class="text">Total Share</span>
-                        <span class="number">10,120</span>
-                    </div>
-                </div>
+                     <?php
+                    require 'db.php'; 
+                    ?>
             </div>
 
             <div class="activity">
                 <div class="title">
-                    <i class="uil uil-clock-three"></i>
-                    <span class="text">Заявки</span>
+                    <i class="uil uil-files-landscapes" id="z_propan"></i>
+                    <span  class="text">Заявки пропан</span>
                 </div>
-<?php
-require 'db.php'; 
-?>
+            </div>     
+                    <?php
+                    require 'dbpropan.php'; 
+                    ?>
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-files-landscapes" id="z_metan"></i>
+                    <span  class="text">Заявки метан</span>
+                </div>
+            </div>    
 
-<div class="activity">
+                    <?php
+                    require 'dbmetan.php'; 
+                    ?>
+            <!-- <div class="activity">
                 <div class="title">
                     <i class="uil uil-clock-three"></i>
                     <span class="text">Recent Activity</span>
                 </div>
 
-                    </div>
-                    
-                </div>
-            </div>
+            </div> -->
+<!-- <?php 
+//require 'dppropan.php'
+?>             
+      -->           
         </div>
-    </section>
+        
 
-    <script src="script.js"></script>
+    </section>
+<!-- 
+    <script src="script.js"></script> -->
 </body>
 </html>

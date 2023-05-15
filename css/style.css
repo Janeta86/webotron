@@ -7,6 +7,7 @@
 
 
 body {
+    
     margin: 0;  
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -24,10 +25,22 @@ h1,h2,h3,h4,h5,h6 {
     
    
 }
+
+.ymaps {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    float: right;
+    top: 150px;
+    position: absolute;
+    left: 688px;
+  
+}
 .btn, button {
     min-width: 400px;
     height: 80px;
-    padding: 0px 15px;
+/*     padding: 0px 15px; */
+    padding: 1em;
     display:inline-flex;
     align-items: center;
     justify-content: center;
@@ -348,7 +361,7 @@ h1,h2,h3,h4,h5,h6 {
 input[type="textg"] {
     width: 230px;
     height: 67px;
-    background: #f8eee7;
+    background: #f5f5f5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     transition: 1s;
@@ -363,7 +376,7 @@ input[type="textg"] {
 input[type="textg"]:focus,
 input[type="textg"]:valid {
 
-    background-color: #f2f0ef;
+    background-color:#dcdad9; 
     
 }
 
@@ -622,7 +635,7 @@ input[type="textg"]:valid {
 input[type="texty"] {
     width: 400px;
     height: 65px;
-    background: #f8eee7;
+    background: #f5f5f5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     transition: 1s;
@@ -695,13 +708,7 @@ input[type="texty"]:valid {
     position: relative;
     line-height: 2;
 }
-.col-md-6 {
-    display: flex;
-    float: right;
-    top: 150px;
-    position: absolute;
-    left: 688px;
-}
+
 
 .gbo {
     
