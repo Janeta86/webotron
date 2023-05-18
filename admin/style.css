@@ -27,7 +27,7 @@
 }
 
 body{
-    min-height: 560vh;
+    min-height: 300vh;
     background-color: var(--panel-color);
 }
 body.dark{

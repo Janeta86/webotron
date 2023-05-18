@@ -16,8 +16,6 @@ catch(PDOException $e) {
     //ПОМОЩЬ
     $name_z = $_POST['name_z'];
     $phone_z = $_POST['phone_z'];
- 
- 
 
       $sql = "INSERT INTO `requestforassistance` (name_z, phone_z)
       VALUES ('".$name_z."', '".$phone_z."')";
@@ -28,28 +26,16 @@ catch(PDOException $e) {
   if(!$sql) 
     {
       echo '<script> alert("Заявка не отправлена"); </script>';
-  /*     header('Location: index.php'); */
           
     }
- 
-  /* echo "Запись успешно создана!"; */
-/* } */
    else 
     {
       echo '<script> alert("Заявка успешно отправлена"); </script>';
-/*       header('Location: index.php'); */
          
     } 
-
-    
 // Закрываем соединение
 $db = null;
 ?>
-
           <script type="text/javascript">
           setInterval(function(){ document.location.replace("index.php"); }, 1000);
           </script>
-<?php 
-
-	   
-  ?>

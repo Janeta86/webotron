@@ -235,8 +235,8 @@
                             <div class="input-box">
                                 <input id="phone_propan" name="telP" type="textg" placeholder="Введите телефон" required>
                             </div>
-                           <!--  </div>
-                        <div class="input-btn"> -->
+                            </div>
+                        <div class="input-btn">
                                 <input type="submit" class="btn1"  value="Отправить заявку">
                         </div>
                          
@@ -365,8 +365,8 @@
                             <div class="input-box">
                                 <input id="phone_metan" name="telM" type="textg" placeholder="Введите телефон" required>
                             </div>
-                           <!--  </div>
-                        <div class="input-btn"> -->
+                            </div>
+                        <div class="input-btn">
                                 <input type="submit" class="btn1"  value="Отправить заявку">
                         </div>
 </form>
@@ -510,7 +510,7 @@
             </div>
         </div>
         <div class="ymaps">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aadd439bae4a5c832589ee72974185186a98c8a9387a3c52cc0931c25a79f9c5b&amp;lang=ru_RU&amp;"></script>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aadd439bae4a5c832589ee72974185186a98c8a9387a3c52cc0931c25a79f9c5b&amp;width=100%25&amp;height=460&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
     </div>
 </section>
